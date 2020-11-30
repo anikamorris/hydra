@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CF7F0F8F25749C0C004B8662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0F8E25749C0C004B8662 /* AppDelegate.swift */; };
 		CF7F0F9125749C0C004B8662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0F9025749C0C004B8662 /* SceneDelegate.swift */; };
-		CF7F0F9325749C0C004B8662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0F9225749C0C004B8662 /* ContentView.swift */; };
+		CF7F0F9325749C0C004B8662 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0F9225749C0C004B8662 /* FirstView.swift */; };
 		CF7F0F9525749C14004B8662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7F0F9425749C14004B8662 /* Assets.xcassets */; };
 		CF7F0F9825749C14004B8662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7F0F9725749C14004B8662 /* Preview Assets.xcassets */; };
 		CF7F0F9B25749C14004B8662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7F0F9925749C14004B8662 /* LaunchScreen.storyboard */; };
+		CF7F0FA425749F12004B8662 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FA325749F11004B8662 /* AppColors.swift */; };
+		CF7F0FAB2574AEF6004B8662 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FAA2574AEF6004B8662 /* HomeView.swift */; };
+		CF7F0FB02574AF38004B8662 /* WaterIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FAF2574AF38004B8662 /* WaterIntake.swift */; };
+		CF7F0FB42574F44D004B8662 /* WaterTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FB32574F44C004B8662 /* WaterTrackerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF7F0F8B25749C0C004B8662 /* water-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "water-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7F0F8E25749C0C004B8662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF7F0F9025749C0C004B8662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF7F0F9225749C0C004B8662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF7F0F9225749C0C004B8662 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		CF7F0F9425749C14004B8662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF7F0F9725749C14004B8662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF7F0F9A25749C14004B8662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF7F0F9C25749C14004B8662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7F0FA325749F11004B8662 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		CF7F0FAA2574AEF6004B8662 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CF7F0FAF2574AF38004B8662 /* WaterIntake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntake.swift; sourceTree = "<group>"; };
+		CF7F0FB32574F44C004B8662 /* WaterTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,11 @@
 		CF7F0F8D25749C0C004B8662 /* water-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				CF7F0FAE2574AF19004B8662 /* Extensions */,
+				CF7F0FAC2574AF02004B8662 /* Models */,
+				CF7F0FA72574AB07004B8662 /* Views */,
 				CF7F0F8E25749C0C004B8662 /* AppDelegate.swift */,
 				CF7F0F9025749C0C004B8662 /* SceneDelegate.swift */,
-				CF7F0F9225749C0C004B8662 /* ContentView.swift */,
 				CF7F0F9425749C14004B8662 /* Assets.xcassets */,
 				CF7F0F9925749C14004B8662 /* LaunchScreen.storyboard */,
 				CF7F0F9C25749C14004B8662 /* Info.plist */,
@@ -73,6 +83,32 @@
 				CF7F0F9725749C14004B8662 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF7F0FA72574AB07004B8662 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF7F0F9225749C0C004B8662 /* FirstView.swift */,
+				CF7F0FAA2574AEF6004B8662 /* HomeView.swift */,
+				CF7F0FB32574F44C004B8662 /* WaterTrackerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF7F0FAC2574AF02004B8662 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF7F0FAF2574AF38004B8662 /* WaterIntake.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF7F0FAE2574AF19004B8662 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF7F0FA325749F11004B8662 /* AppColors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF7F0F8F25749C0C004B8662 /* AppDelegate.swift in Sources */,
+				CF7F0FA425749F12004B8662 /* AppColors.swift in Sources */,
+				CF7F0FB42574F44D004B8662 /* WaterTrackerView.swift in Sources */,
 				CF7F0F9125749C0C004B8662 /* SceneDelegate.swift in Sources */,
-				CF7F0F9325749C0C004B8662 /* ContentView.swift in Sources */,
+				CF7F0FAB2574AEF6004B8662 /* HomeView.swift in Sources */,
+				CF7F0F9325749C0C004B8662 /* FirstView.swift in Sources */,
+				CF7F0FB02574AF38004B8662 /* WaterIntake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
