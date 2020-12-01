@@ -14,13 +14,13 @@ struct WaterTrackerView: View {
     var body: some View {
         Circle()
             .trim(from: 0, to: completionAmount)
-            .stroke(Color.red, lineWidth: 20)
+            .stroke(Color.medLightBlue, lineWidth: 20)
             .frame(width: 200, height: 200)
             .rotationEffect(.degrees(-90))
             .onReceive(timer) { _ in
                 withAnimation {
                     guard self.completionAmount < 1 else { return }
-                    self.completionAmount += 0.2
+                    self.completionAmount += 0.8
                 }
             }
     }
