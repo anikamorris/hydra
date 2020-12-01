@@ -77,10 +77,28 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
-                
+                Rectangle()
+                    .foregroundColor(.lightBlue)
+                    .frame(width: 80, height: 300, alignment: .center)
+                    .overlay(
+                          Rectangle()
+                            .foregroundColor(.skyBlue)
+                            // height is 300px, so to get the offset no matter the height of the overlay, we multiply 300 by the completion amount and set the y offset to half of the difference
+                            .frame(width: 80, height: 270, alignment: .bottom)
+                            .offset(y: 15)
+                    )
+                    .cornerRadius(8.0)
+                    .padding()
+                    .offset(x: -5.0, y: -60.0)
             }
         }
         .navigationBarBackButtonHidden(true)
+    }
+}
+
+extension Shape {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners))
     }
 }
 
