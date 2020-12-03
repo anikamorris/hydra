@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct WaterTrackerView: View {
-    @State private var completionAmount: CGFloat = 0.0
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
+    @State private var ounces: Double = 0
     var body: some View {
-        Circle()
-            .trim(from: 0, to: completionAmount)
-            .stroke(Color.medLightBlue, lineWidth: 20)
-            .frame(width: 200, height: 200)
-            .rotationEffect(.degrees(-90))
-            .onReceive(timer) { _ in
-                withAnimation {
-                    guard self.completionAmount < 1 else { return }
-                    self.completionAmount += 0.8
-                }
-            }
+        VStack {
+            Text("How much water did you drink?")
+                .fontWeight(.semibold)
+                .foregroundColor(.darkBlue)
+                .font(.system(size: 20.0))
+                .padding()
+            Text("\(Int(ounces))oz")
+                .fontWeight(.semibold)
+                .foregroundColor(.darkBlue)
+                .font(.system(size: 30.0))
+            Slider(value: $ounces, in: 0...100, step: 1.0)
+                .padding()
+        }
     }
 }
 
