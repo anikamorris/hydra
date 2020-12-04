@@ -9,7 +9,9 @@ import SwiftUI
 
 struct WaterTrackerView: View {
     @Binding var isPresented: Bool
+    @Binding var completionAmount: CGFloat
     @State private var ounces: Double = 0
+    let goal: CGFloat
     
     var body: some View {
         ZStack {
@@ -28,6 +30,7 @@ struct WaterTrackerView: View {
                 Slider(value: $ounces, in: 0...100, step: 1.0)
                     .padding()
                 Button("Done") {
+                    self.completionAmount += CGFloat(ounces) / goal
                     self.isPresented = false
                 }
             }

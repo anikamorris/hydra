@@ -141,7 +141,7 @@ struct HomeView: View {
                             .fontWeight(.heavy)
                             .foregroundColor(.white)
                     }.sheet(isPresented: $showingDetail) {
-                        WaterTrackerView(isPresented: self.$showingDetail)
+                        WaterTrackerView(isPresented: self.$showingDetail, completionAmount: self.$completionAmount, goal: goal)
                     }
                     .offset(x: -5.0, y: -60.0)
                 }
