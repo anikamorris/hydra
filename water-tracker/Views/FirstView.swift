@@ -12,6 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
+
             VStack {
                 Image("hydra-logo")
                     .resizable()
@@ -34,7 +35,7 @@ struct ContentView: View {
                     .foregroundColor(.secondary)
                     .offset(x: 0, y: -30.0)
                 Spacer()
-                NavigationLink(destination: HomeView(), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: SetIntakeView(), isActive: $isShowingDetailView) { EmptyView() }
                 Button("Get Started") {
                     self.isShowingDetailView = true
                 }

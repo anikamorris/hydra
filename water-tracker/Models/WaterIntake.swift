@@ -8,8 +8,8 @@
 import Foundation
 
 struct WaterIntake {
-    let weight: Double
-    let minutesOfExercise: Double
+    var weight: Double
+    var minutesOfExercise: Double
     
     // calculates ounces of water needed based on weight and how much exercise is planned
     func calculate() -> Double {

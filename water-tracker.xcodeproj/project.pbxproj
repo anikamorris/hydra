@@ -18,6 +18,7 @@
 		CF7F0FB02574AF38004B8662 /* WaterIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FAF2574AF38004B8662 /* WaterIntake.swift */; };
 		CF7F0FB42574F44D004B8662 /* WaterTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FB32574F44C004B8662 /* WaterTrackerView.swift */; };
 		CF7F0FB72575DC43004B8662 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F0FB62575DC42004B8662 /* RoundedCorner.swift */; };
+		CFD5509F2579CCE50096D2A7 /* SetIntakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5509E2579CCE40096D2A7 /* SetIntakeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CF7F0FAF2574AF38004B8662 /* WaterIntake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntake.swift; sourceTree = "<group>"; };
 		CF7F0FB32574F44C004B8662 /* WaterTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackerView.swift; sourceTree = "<group>"; };
 		CF7F0FB62575DC42004B8662 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		CFD5509E2579CCE40096D2A7 /* SetIntakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIntakeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				CF7F0F9225749C0C004B8662 /* FirstView.swift */,
 				CF7F0FAA2574AEF6004B8662 /* HomeView.swift */,
 				CF7F0FB32574F44C004B8662 /* WaterTrackerView.swift */,
+				CFD5509E2579CCE40096D2A7 /* SetIntakeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD5509F2579CCE50096D2A7 /* SetIntakeView.swift in Sources */,
 				CF7F0F8F25749C0C004B8662 /* AppDelegate.swift in Sources */,
 				CF7F0FA425749F12004B8662 /* AppColors.swift in Sources */,
 				CF7F0FB42574F44D004B8662 /* WaterTrackerView.swift in Sources */,
