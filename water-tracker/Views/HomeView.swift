@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var completionAmount: CGFloat = 0.8
-    @State var showingDetail = false
+    @State private var completionAmount: CGFloat = 0.0
+    @State private var showingDetail = false
+    @State private var showingProfile = false
     @Binding var goal: CGFloat
     
     private func completionToPercent() -> String {
@@ -64,6 +65,15 @@ struct HomeView: View {
                     }
                     .padding()
                     Spacer()
+                    Button(action: {
+                        print("Profile button was tapped")
+                    }) {
+                        Image(systemName: "person")
+                            .resizable()
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .foregroundColor(.darkBlue)
+                    }
+                    .offset(x: -20.0, y: -5.0)
                 }
                 .offset(x: 0, y: -50.0)
             }
@@ -134,6 +144,7 @@ struct HomeView: View {
                         .padding()
                         .offset(x: -5.0, y: -60.0)
                     Button(action: {
+                        print("toggled")
                         self.showingDetail.toggle()
                     }) {
                         Text("+")
@@ -157,8 +168,8 @@ extension Shape {
     }
 }
 
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeView(goal: 125)
-//    }
-//}
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView(goal: .constant(125))
+    }
+}

@@ -33,7 +33,7 @@ struct SetIntakeView: View {
                 }
                 .padding()
                 VStack(alignment: .leading) {
-                    Text("How many minutes of exercise on average do you get per day?")
+                    Text("How much will you exercise today?")
                         .foregroundColor(.darkBlue)
                         .fontWeight(.bold)
                         .font(.title3)
